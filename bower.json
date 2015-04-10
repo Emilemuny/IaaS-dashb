@@ -1,0 +1,11 @@
+{
+  "name": "angular-prototype",
+  "version": "1.0.0",
+  "homepage": "https://github.com/coding-house-jan2015/angular-prototype",
+  "authors": [
+    "Chyld Medford <chyld.medford@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+  }
+}

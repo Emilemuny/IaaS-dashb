@@ -1,0 +1,37 @@
+{
+  "name": "angular-prototype",
+  "description": "Angular Prototype Application",
+  "homepage": "https://github.com/coding-house-jan2015/angular-prototype",
+  "engines": {
+    "node": "0.12.x"
+  },
+  "keywords": [
+    "gulp",
+    "jshint",
+    "jscs",
+    "server",
+    "hapi",
+    "node",
+    "mongo",
+    "mongoose",
+    "angular"
+  ],
+  "author": "Chyld Medford <chyld.medford@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coding-house-jan2015/angular-prototype.git"
+  },
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server/index.js",
+    "localhost": "MONGO_URL=mongodb://localhost/angular-prototype-prod PORT=3333 nodemon -e js,jade server/index.js",
+    "preinstall": "rm -rf node_modules public",
+    "postinstall": "bower install && gulp build",
+    "test": "MONGO_URL=mongodb://localhost/angular-prototype-test lab -l -v -m 5000 test/unit test/acceptance"
+  },
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

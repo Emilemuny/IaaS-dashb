@@ -1,0 +1,19 @@
+nav.navbar.navbar-default(ng-controller='NavCtrl')
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#navbar")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(ui-sref='home') Angular Prototype
+    #navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav.navbar-right(ng-hide='email')
+        li: a(ui-sref='register'): i.fa.fa-user-plus &nbsp; Register
+        li: a(ui-sref='login'): i.fa.fa-key &nbsp; Login
+      ul.nav.navbar-nav.navbar-right(ng-show='email')
+        li: a(href='#', ng-click='logout()') {{email}}
+      ul.nav.navbar-nav.navbar-right
+        li: a(ui-sref='home'): i.fa.fa-home &nbsp; Home
+        li: a(ui-sref='faq'): i.fa.fa-info &nbsp; Faq
+        li: a(ui-sref='contact'): i.fa.fa-at &nbsp; Contact
