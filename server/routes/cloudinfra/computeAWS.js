@@ -13,5 +13,6 @@ module.exports = {
         console.log(server.toJSON());
       });
     });
+    reply('Success');
   }
 };
