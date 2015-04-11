@@ -1,6 +1,6 @@
 'use strict';
 
-var client = require('../../models/cloud');
+var client = require('../../models/aws');
 
 module.exports = {
   auth: false,
