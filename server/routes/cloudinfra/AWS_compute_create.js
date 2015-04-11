@@ -14,20 +14,8 @@ module.exports = {
       if(err){
         console.log('Error****', err);
       }
-
       console.log('Server created info', server.toJSON());
     });
     reply('Success');
   }
 };
-
-// client.getImages(function (err, images) {
-//   if (err) {
-//     console.log('There has been an error',err);
-//     return;
-//   }
-//   ´.log('Images******', images);
-//   var image = _.findWhere(images, { name: 'Amazon Linux AMI 2015.03' });
-//   console.log('ImageFound***', image);
-//
-// });
