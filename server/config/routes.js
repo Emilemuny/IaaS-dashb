@@ -11,5 +11,6 @@ module.exports = [
   {method: 'get', path: '/cloudcreate', config: require('../routes/cloudinfra/aws/AWS_compute_create')},
   {method: 'get', path: '/joyentcreate', config: require('../routes/cloudinfra/joyent/joyent_compute_create')},
   {method: 'get', path: '/joyentget', config: require('../routes/cloudinfra/joyent/joyent_compute_get')},
-  {method: 'get', path: '/docreate', config: require('../routes/cloudinfra/digitalOcean/docean_compute_create')}
+  {method: 'get', path: '/docreate', config: require('../routes/cloudinfra/digitalOcean/docean_compute_create')},
+  {method: 'get', path: '/doget', config: require('../routes/cloudinfra/digitalOcean/docean_compute_get')}
 ];
