@@ -11,6 +11,7 @@ module.exports = [
   {method: 'get', path: '/awsget', config: require('../routes/cloudinfra/aws/AWS_compute_get')},
   {method: 'get', path: '/awscreate', config: require('../routes/cloudinfra/aws/AWS_compute_create')},
   {method: 'get', path: '/awsreboot', config: require('../routes/cloudinfra/aws/AWS_compute_reboot')},
+  {method: 'get', path: '/awsdestroy', config: require('../routes/cloudinfra/aws/AWS_compute_destroy')},
 
   {method: 'get', path: '/joyentcreate', config: require('../routes/cloudinfra/joyent/joyent_compute_create')},
   {method: 'get', path: '/joyentget', config: require('../routes/cloudinfra/joyent/joyent_compute_get')},
