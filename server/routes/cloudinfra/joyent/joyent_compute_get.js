@@ -1,6 +1,7 @@
 'use strict';
 
-var client = require('../../models/aws');
+var client = require('../../../models/joyent');
+
 
 module.exports = {
   auth: false,
@@ -9,8 +10,12 @@ module.exports = {
       if(err){
         console.log('There was an error', err);
       }
+      else if(servers.length === 0){
+        console.log('You got no Servers at Joyent');
+        console.log('Empty', servers);
+      }
       servers.forEach(function(server){
-        console.log(server.toJSON());
+        console.log('Your servers', server.toJSON());
       });
     });
     reply('Success');

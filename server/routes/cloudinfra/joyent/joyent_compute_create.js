@@ -1,20 +1,20 @@
 'use strict';
 
-var client = require('../../models/aws');
+var client = require('../../../models/joyent');
+
 
 module.exports = {
   auth: false,
   handler: function(request, reply){
     var options = {
-      image: 'ami-ff527ecf',
-      Maxcount: '1',
-      Mincount: '1'
+      package : 'g3-highcpu-1.75-smartos'
+
     };
     client.createServer(options, function(err, server){
       if(err){
-        console.log('Error****', err);
+        console.log('There is an error', err);
       }
-      console.log('Server created info', server.toJSON());
+      console.log('Your newly created server info', server.toJSON());
     });
     reply('Success');
   }
