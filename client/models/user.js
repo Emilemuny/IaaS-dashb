@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angular-prototype')
+angular.module('iaas-dashb')
   .factory('User', ['$http', function($http){
 
     function register(user){

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angular-prototype', ['ui.router', 'ngMessages'])
+angular.module('iaas-dashb', ['ui.router', 'ngMessages'])
   .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
     $urlRouterProvider.otherwise('/');
 
