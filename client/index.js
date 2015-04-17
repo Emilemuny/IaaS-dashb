@@ -10,7 +10,9 @@ angular.module('iaas-dashb', ['ui.router', 'ngMessages'])
       .state('contact', {url:'/contact', templateUrl:'/views/general/contact.html'})
 
       .state('register', {url:'/register', templateUrl:'/views/users/users.html', controller:'UsersCtrl'})
-      .state('login', {url:'/login', templateUrl:'/views/users/users.html', controller:'UsersCtrl'});
+      .state('login', {url:'/login', templateUrl:'/views/users/users.html', controller:'UsersCtrl'})
+
+      .state('compute', {url:'/compute', templateUrl:'/views/cloud/compute.html', controller: 'HomeCtrl'});
   }])
   .run(['$rootScope', 'User', function($rootScope, User){
     User.status().then(function(response){
