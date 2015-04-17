@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('iaas-dashb')
-  .factory('User', ['$http', function($http){
+ .factory('User', ['$http', function($http){
 
     function register(user){
       return $http.post('/register', user);
