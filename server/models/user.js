@@ -7,7 +7,15 @@ var User;
 var userSchema = mongoose.Schema({
     email: {type: String, required: true},
     password: {type: String, required: true},
-    createdAt: {type: Date, default: Date.now, required: true}
+    createdAt: {type: Date, default: Date.now, required: true},
+    cloud: {
+      server: {
+        Id:String,
+        name: String,
+        addresses: String,
+        date: {type: Date, default: Date.now}
+      }
+    }
 });
 
 userSchema.statics.register = function(o, cb){

@@ -24,10 +24,10 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node server/index.js",
-    "localhost": "MONGO_URL=mongodb://localhost/angular-prototype-prod PORT=3333 nodemon -e js,jade server/index.js",
+    "localhost": "MONGO_URL=mongodb://localhost/iaas-dashb-prod PORT=3333 nodemon -e js,jade server/index.js",
     "preinstall": "rm -rf node_modules public",
     "postinstall": "bower install && gulp build",
-    "test": "MONGO_URL=mongodb://localhost/angular-prototype-test lab -l -v -m 5000 test/unit test/acceptance"
+    "test": "MONGO_URL=mongodb://localhost/iaas-dashb-test lab -l -v -m 5000 test/unit test/acceptance"
   },
   "license": "MIT",
   "dependencies": {
