@@ -1,23 +1,10 @@
-.spinner(ng-show='!status')
-  .spinner-container.container1
-    .circle1
-    .circle2
-    .circle3
-    .circle4
-  .spinner-container.container2
-    .circle1
-    .circle2
-    .circle3
-    .circle4
-  .spinner-container.container3
-    .circle1
-    .circle2
-    .circle3
-    .circle4
-h3.spins Hang-on your server is being prepared...
-h4.prov Your Server id: {{createdata.id}}
-h4.prov Launched at:{{createdata.launchTime}}
-h4.prov Status: {{createdata.status}}
+
+.row(ng-init='init()')
+  .col-xs-4
+    h3.spins Hang-on your server is being prepared...
+    h4.prov: i.fa.fa-laptop  Your Server id: {{createdata.id}}
+    h4.prov: i.fa.fa-clock-o  Launched at:
+    h4.prov: i.fa.fa-refresh  Status:
 
      
 

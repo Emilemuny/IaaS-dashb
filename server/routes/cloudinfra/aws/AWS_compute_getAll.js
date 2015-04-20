@@ -5,13 +5,14 @@ var client = require('../../../models/aws');
 module.exports = {
   auth: false,
   handler: function(request, reply){
-    var serverId = request.params.serverId;
-    client.getServer(serverId, function(err, server){
+    client.getServers(function(err, servers){
       if(err){
         console.log('There was an error', err);
       }
+      servers.forEach(function(server){
         console.log(server.toJSON());
-        reply(server.toJSON());
       });
+    });
+    reply('Success');
   }
 };

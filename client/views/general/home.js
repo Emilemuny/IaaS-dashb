@@ -7,8 +7,7 @@ angular.module('iaas-dashb')
       console.log('Image type:', image);
       console.log('Response from AWS/backend', response);
       $rootScope.createdata = response.data;
-      $rootScope.status = 0;
-      $state.go('compute');
+      $state.go('provisioning');
     });
   };
 

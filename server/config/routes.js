@@ -8,7 +8,7 @@ module.exports = [
   {method: 'get', path: '/status', config: require('../routes/users/status')},
   {method: 'delete', path: '/logout', config: require('../routes/users/logout')},
 
-  {method: 'get', path: '/awsget', config: require('../routes/cloudinfra/aws/AWS_compute_get')},
+  {method: 'get', path: '/awsget/{serverId}', config: require('../routes/cloudinfra/aws/AWS_compute_get')},
   {method: 'post', path: '/awscreate/{image}', config: require('../routes/cloudinfra/aws/AWS_compute_create')},
   {method: 'get', path: '/awsreboot', config: require('../routes/cloudinfra/aws/AWS_compute_reboot')},
   {method: 'get', path: '/awsdestroy', config: require('../routes/cloudinfra/aws/AWS_compute_destroy')},
